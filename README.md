@@ -1,55 +1,56 @@
-Calculator CLI App
+# Console To-Do List Application
 
-Overview
+## 📌 Description
+This is a simple command-line To-Do List application developed in Python. It allows users to add, view, and remove tasks. All tasks are stored in a text file, so they remain available even after the program is closed.
 
-A simple Command Line Interface (CLI) Calculator application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+## ✨ Features
+- Add new tasks
+- View all tasks
+- Remove existing tasks
+- Save tasks permanently in a text file (`tasks.txt`)
+- Simple menu-driven interface
 
-Features
+## 🛠 Technologies Used
+- Python 3
+- File Handling
+- Lists
+- Functions
+- Loops
+- Conditionals
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- User-friendly command-line interface
-- Input validation
-- Handles division by zero
+## 📂 Project Structure
+```
+ToDo-App/
+│── todo.py
+│── tasks.txt
+│── README.md
+```
 
-Requirements
+## ▶️ How to Run
+1. Install Python 3.
+2. Download or clone this repository.
+3. Open the terminal in the project folder.
+4. Run the program:
 
-- Python 3.x
+```bash
+python todo.py
+```
 
-How to Run
+## 📖 Example Menu
+```
+===== TO-DO LIST =====
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+```
 
-1. Clone or download the project.
-2. Open a terminal in the project directory.
-3. Run:
-   python calculator.py
+## 🎯 Learning Outcomes
+- Python file handling
+- Working with lists
+- Functions and loops
+- Building menu-driven console applications
+- Data persistence using text files
 
-Usage
-
-1. Select the desired operation.
-2. Enter two numbers.
-3. View the result.
-4. Repeat or exit the application.
-
-Project Structure
-
-calculator.py
-README.md
-
-Example
-
-Choose an operation:
-1. Add
-2. Subtract
-3. Multiply
-4. Divide
-
-Enter first number: 10
-Enter second number: 5
-
-Result: 15
-
-Author
-
-Swathi Singam
+## 👩‍💻 Author
+**Swathi Singam**
