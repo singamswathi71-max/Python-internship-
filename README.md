@@ -1,56 +1,58 @@
-# Console To-Do List Application
+# BBC News Headlines Web Scraper
 
-## 📌 Description
-This is a simple command-line To-Do List application developed in Python. It allows users to add, view, and remove tasks. All tasks are stored in a text file, so they remain available even after the program is closed.
+## Overview
+This project is a simple Python web scraper that extracts the latest **BBC News** headlines from the BBC News website using the `requests` and `BeautifulSoup` libraries. The extracted headlines are saved into a text file named `headlines.txt`.
 
-## ✨ Features
-- Add new tasks
-- View all tasks
-- Remove existing tasks
-- Save tasks permanently in a text file (`tasks.txt`)
-- Simple menu-driven interface
+## Features
+- Fetches the BBC News homepage.
+- Extracts all `<h2>` headlines.
+- Removes duplicate headlines.
+- Saves headlines to `headlines.txt`.
+- Handles HTTP request errors gracefully.
 
-## 🛠 Technologies Used
+## Technologies Used
 - Python 3
-- File Handling
-- Lists
-- Functions
-- Loops
-- Conditionals
+- Requests
+- BeautifulSoup4
 
-## 📂 Project Structure
-```
-ToDo-App/
-│── todo.py
-│── tasks.txt
-│── README.md
-```
-
-## ▶️ How to Run
-1. Install Python 3.
-2. Download or clone this repository.
-3. Open the terminal in the project folder.
-4. Run the program:
+## Requirements
+Install the required libraries:
 
 ```bash
-python todo.py
+pip install requests beautifulsoup4
 ```
 
-## 📖 Example Menu
-```
-===== TO-DO LIST =====
-1. View Tasks
-2. Add Task
-3. Remove Task
-4. Exit
+## How to Run
+1. Save the Python script as `main.py`.
+2. Install the required libraries.
+3. Run the program:
+
+```bash
+python main.py
 ```
 
-## 🎯 Learning Outcomes
-- Python file handling
-- Working with lists
-- Functions and loops
-- Building menu-driven console applications
-- Data persistence using text files
+## Output
+The program creates a file named `headlines.txt` containing all extracted BBC News headlines.
 
-## 👩‍💻 Author
-**Swathi Singam**
+Example console output:
+
+```text
+Successfully saved 43 headlines to headlines.txt
+```
+
+## Project Structure
+
+```
+project/
+│── main.py
+│── headlines.txt
+└── README.md
+```
+
+## Future Enhancements
+- Save data in CSV or JSON format.
+- Scrape headlines from multiple news websites.
+- Add timestamps to the saved headlines.
+- Schedule automatic scraping.
+
+## Author
